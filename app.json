@@ -1,0 +1,8 @@
+{
+    "name": "Negus Multimedia Coming Soon App",
+    "description": "Coming Soon app",
+    "repository": "https://github.com/Jodi-MarieTaylor/negus-comingsoon.git",
+    "logo": "/images/logo.png",
+    "keywords": "Photography, graphic design, negus, multimedia",
+    "image": "heroku/nodejs"
+}
