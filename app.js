@@ -239,8 +239,8 @@ app.get('/videography', function(req, res){
 app.post('/send-email', function(req, res){
     console.log('sending email');
     const sgMail = require('@sendgrid/mail');
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-    console.log('key', process.env.SENDGRID_API_KEY); 
+    sgMail.setApiKey('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');
+    console.log('key', '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'); 
     const msg = {
       to: 'jodimarie@negusmultimedia.com',
       from: 'website@negusmultimedia.com',
