@@ -1,0 +1,200 @@
+
+        
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <% include ../partials/head %>
+    </head>
+    <body >
+    
+    <header>
+        <% include ../partials/header %>
+    </header>
+    
+    <main>
+        
+        
+        <!-- site-main -->
+        <div id="main" class="site-main">
+        
+        
+        
+        	     
+                 
+                 
+                        
+            <!-- primary -->
+        	<div id="primary" class="content-area">
+            	
+                <!-- site-content -->
+                <div id="content" class="site-content" role="main">
+                
+                
+ 
+                    
+                    <!-- layout-fixed -->
+                    <div class="layout-fixed">
+                      <!-- .hentry -->
+                        <article class="hentry page">
+                            
+                            
+                            <!-- .entry-header -->
+                            <header class="entry-header">
+                                <h1 class="entry-title">CONTACT US</h1>
+                            </header>
+                            <!-- .entry-header --> 
+                            
+                            <div class="alert alert-success email-alert" hidden id="email-alert">
+                                    Thanks for contacting us! We will get in touch with you soon! 
+                            </div>
+                            <!-- .entry-content -->
+                            <div class="row entry-content">
+                                
+                              
+                                <div class="col-lg-8">
+                                    
+                                    <h3 class="section-title">Mail Us Right Here</h3>
+                                    
+                                    <!-- .contact-form -->
+                                    <div class="contact-form">
+                                    
+                                        <form id="contact-form" class="validate-form" method="post" action="/send-email">
+                                        
+                                            <!-- enter mail subject here -->
+                                            <input type="hidden" name="subject" id="subject" value="You have a new message from Photographer!">
+                                            
+                                            <p>
+                                            <label for="name">NAME</label>
+                                            <input type="text" name="name" id="name" class="required">
+                                            </p>
+                                            
+                                            <p>
+                                            <label for="email">EMAIL</label>
+                                            <input type="text" name="email" id="email" class="required email">
+                                            </p>
+                                            
+                                            <p class="antispam">Leave this empty if you are a human :
+                                                <br /><input name="url" />
+                                            </p>
+                                            
+                                            <p>
+                                            <label for="message">MESSAGE</label>
+                                            <textarea name="message" id="message" class="required"></textarea>
+                                            </p>
+                                            
+                                            <p>
+                                            <button type="submit" class=" button pull-right" onclick="document.getElementById('email-alert').hidden = false;"><span class="">Submit</span><span class="s"></span></button>
+                                            </p>
+                                        
+                                        </form>
+                                    
+                                    </div>
+                                    <!-- .contact-form -->
+                                        
+                                </div>
+                                <div class="col-lg-4">
+                                    
+                                    <h2 class="section-title">REACH US AT</h2>
+                                    
+                                    <!-- row -->
+                                    <div class="">
+                                    
+                                        <!-- column 3/12 -->
+                                        <div class="">
+
+                                            <!-- fun-fact -->
+                                            <div class="fun-fact">
+                                                <i class="fas fa-phone"></i>
+                                                <h4>Phone : +1 (876) 807-3646</h4>
+                                                <h4>Phone : +1 (876) 587-0411 </h4>
+                                            </div>
+                                            <!-- fun-fact -->
+
+                                        </div>
+                                        <!-- column 3/12 -->
+                                        
+                                        <!-- column 3/12 -->
+                                        <div class="">
+
+                                            <!-- fun-fact -->
+                                            <div class="fun-fact">
+                                                <i class="fas fa-envelope"></i>
+                                                <h4>nicholas@negusmultimedia.com</h4>
+                                            </div>
+                                            <!-- fun-fact -->
+
+                                        </div>
+                                        
+                                        <!-- column 3/12 -->
+                                        <div class="">
+
+                                            <!-- fun-fact -->
+                                            <div class="fun-fact">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                                <h4>Kingston, Jamaica</h4>
+                                            </div>
+                                            <!-- fun-fact -->
+
+                                        </div>
+                                        <!-- column 3/12 -->
+                                        
+                                        <!-- column 3/12 -->
+
+                                    
+
+                                    </div>
+                                    <!-- row -->
+                                    
+                                </div>   
+                            
+                            </div>
+                            <!-- .entry-content -->
+                            
+                            
+                        </article>
+                        <!-- .hentry -->
+                        
+                        
+                        
+                	
+                    
+                
+                		<!-- InstanceEndEditable -->
+                        
+                        
+                        
+                    </div>
+                    <!-- layout-fixed -->
+                    
+                    
+                    
+                    
+                
+                	
+                	
+                
+                </div>
+                <!-- site-content -->
+                
+            </div>
+            <!-- primary --> 
+            
+            
+            
+               
+        
+        
+        
+        
+        </div>
+        <!-- site-main -->
+        
+       
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>

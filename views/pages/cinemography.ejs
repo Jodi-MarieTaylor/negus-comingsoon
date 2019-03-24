@@ -1,0 +1,157 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+
+<main>
+          
+        <!-- site-main -->
+        <div id="main" class="site-main">
+        
+        
+        
+        	     
+                 
+                 
+                        
+                <!-- primary -->
+                <div id="primary" class="content-area">
+                    
+                    <!-- site-content -->
+                    <div id="content" class="site-content" role="main">
+                    
+                    
+                        
+                    
+                        
+                        
+                        
+                        <!-- InstanceBeginEditable name="FeaturedContent" -->
+                        
+                        
+                        <!-- InstanceEndEditable -->
+                        
+                        
+                        
+                        <!-- layout-medium -->
+                        <div class="layout-medium">
+                        
+                        
+                        
+                            <!-- InstanceBeginEditable name="LayoutMediumContent" -->
+                            
+                            
+                            
+                            
+                            <!-- .gallery-single -->
+                            <div class="gallery-single">
+                            
+                            
+                                <!-- .hentry -->
+                                <article class="hentry">
+                                    
+                                     <!-- .entry-header -->
+                                    <header class="entry-header">                                   
+                                        <h1 class="entry-title">VIDEOGRAPHY</h1>
+                                    </header>
+                                    <!-- .entry-header -->
+                                
+                                
+                                    <!-- .entry-content -->
+                                    <div class="entry-content">
+                                        
+                                        
+                                        <% for(var i=0; i < posts.length; i++) { %>
+                                         
+                                            
+                                            <!-- row -->
+                                            <div class="row">
+                                            
+                                            
+                                                
+                                                <!-- column 6/12 -->
+                                                <div class="col-sm-12">
+                                                    <h2 class="section-title text-center" style="text-align: center;" >Client</h2>
+                                                    <p style="text-transform: capitalize; text-align: center; font-size: 18px;"><%= posts[i].client %></p>
+                                                </div>
+                                                <!-- column 6/12 -->
+                                                <!-- column 6/12 -->
+                                              
+                                                <!-- column 6/12 -->
+                                            </div>
+                                            <!-- row -->	
+                                           <iframe src="<%= posts[i].file %>" width="640" height="360" style="margin: 0 auto; display: block;"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                           <br/>
+                                      
+                                        <% } %>  
+                                      
+                                        
+                                        
+                                        
+                                        
+                                
+                                        
+                                    
+                                    </div>
+                                    <!-- .entry-content -->
+                                    
+                                    
+                                 
+                                </article>
+                                <!-- .hentry -->
+                            
+                            
+                            
+                            </div>
+                            <!-- .gallery-single -->
+                            
+                            
+                            
+                            
+                            
+                            <!-- InstanceEndEditable -->
+                            
+                            
+                            
+                        </div>
+                        <!-- layout-medium -->
+                        
+                        
+                        
+                        
+                    
+                        
+                        
+                    
+                    </div>
+                    <!-- site-content -->
+                    
+                </div>
+                <!-- primary --> 
+                
+                
+                
+                   
+            
+            
+            
+            
+            </div>
+            <!-- site-main -->
+</main>
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>
+
