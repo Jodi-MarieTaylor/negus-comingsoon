@@ -65,7 +65,7 @@
                                     <div class="pw-gallery pw-collage pw-collage-loading" data-gallery-style="minimal" data-share="true" data-fullscreen="true" data-bg-opacity="0.95" data-row-height="360" data-mobile-row-height="120" data-effect="effect-4">
                                         
                                         <% for(var i=0; i < posts.length; i++) { %>
-                                          <a href="<%= posts[i].file %>" data-size="2000x2000" data-med="<%= posts[i].file %>" data-med-size="960x960" data-attachment-page="image.jpg">
+                                          <a href="<%= posts[i].file %>" data-size="<%= posts[i].image.contentType %>" data-med="<%= posts[i].file %>" data-med-size="960x960" data-attachment-page="image.jpg">
                                             <img src="<%= posts[i].file %>" alt="image" width="500" height="500" />
                                            
                                           </a>

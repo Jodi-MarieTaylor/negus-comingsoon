@@ -127,7 +127,7 @@ app.get('/photography/weddingsandengagements', function(req, res){
       });
 })
 app.get('/photography/events', function(req, res){
-    Attachment.find({category: 'events' },  function (err, posts) {
+    Attachment.find({category: 'Events' },  function (err, posts) {
         if (err) return console.error(err);
         res.render('pages/photography/events', {
             posts : posts,
@@ -383,7 +383,9 @@ app.post('/admin/upload', upload.single('file'), function (req, res, next) {
             var secure_url = result.secure_url
             // upload to db form data and secure url
             console.log('secure_url', secure_url);
-            var post = new Attachment({ title: req.body.title , client: req.body.client, datetaken: req.body.date, description: req.body.description, category: req.body.category, file: secure_url});
+            console.log('width and height', result.width, result.height);
+
+            var post = new Attachment({ title: req.body.title , client: req.body.client, datetaken: req.body.date, description: req.body.description, category: req.body.category, file: secure_url, image: {data: null, contentType: " " + result.width + "x" + result.height + " " }});
             post.save(function (err, fluffy) {
                 if (err) return console.error("We didnt save", err);
                 console.log("We saved!");
