@@ -155,7 +155,7 @@ app.get('/photography/promotional', function(req, res){
     });
 })
 app.get('/photography/other', function(req, res){
-    Attachment.find({category: 'other' },  function (err, posts) {
+    Attachment.find({category: 'other-photograpy' },  function (err, posts) {
         if (err) return console.error(err);
         res.render('pages/photography/other', {
             posts : posts,
